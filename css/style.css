@@ -63,10 +63,19 @@ body {
     left: 12mm;
     transform: rotate(-37deg);
 }
-
+.id-card-wrapper-front .id-card-background .box4 {
+    position: absolute;
+    height: 15mm;
+    width: 15mm;
+    top: 13mm;
+    left: 30mm;
+    border-radius: 50%;
+    border: 1mm solid #fca24d;
+}
 .org-logo {
     text-align: center;
     margin-bottom: 14.25pt;
+    display: none;
     /* 19px */
 }
 
@@ -86,71 +95,91 @@ body {
     /* 100px */
     width: 75pt;
     /* 100px */
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 .user-photo img {
-    width: 18.75mm;
-    /* 25mm */
-    height: 15.75mm;
-    /* 21mm */
-    border-radius: 5pt;
+    width: 20mm;
+    height: 20mm;
     position: absolute;
-    top: 5.25mm;
-    /* 7mm */
+    top: 2.25mm;
     left: 42pt;
-    /* 56px */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.5mm solid black;
 }
 
 .user-name {
-    font-size: 1.1667em;
+    font-size: 1em;
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 30mm;
     position: absolute;
-    top: 35mm;
-    left: 11mm;
+    top: 34mm;
+    left: 0mm;
+    margin-left: 10mm;
+    width: 20mm;
+    color: #164d52;
 }
 
 .id-number {
-    font-size: 0.8333em;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 18mm;
+    font-size: 0.5em;
     position: absolute;
-    top: 42mm;
-    left: 21mm;
-}
-
-.id-title {
-    font-size: 0.8333em;
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 18mm;
-    position: absolute;
-    top: 48mm;
-    left: 12mm;
+    top: 50mm;
+    left: 0mm;
+    width: 62mm;
+    word-spacing: 7mm;
+    margin-left: 10mm;
 }
-
+.id-number span{
+    position: absolute;
+    width: 16mm;
+    padding-left: 10mm;
+    top: 0mm;
+    word-spacing: 3mm;
+}
 .org-name {
-    font-size: -1.1667em;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 18mm;
+    font-size: 0.5em;
     position: absolute;
-    top: 54mm;
-    left: 8mm;
+    font-weight: bold;
+    top: 53mm;
+    left: 0mm;
+    width: 100mm;
+    word-spacing: 7mm;
+    margin-left: 10mm;
+}
+.org-name span{
+    position: absolute;
+    width: 34mm;
+    padding-left: 10mm;
+    top: 0mm;
+    word-spacing: 3mm;
 }
 
 .org-address {
-    font-size: 0.8333em;
+    font-size: 0.5em;
+    position: absolute;
     font-weight: bold;
-    text-align: center;
+    top: 56mm;
+    left: 0mm;
+    width: 62mm;
+    word-spacing: 7mm;
+    margin-left: 10mm;
+}
+.org-address span{
+    position: absolute;
+    width: 20mm;
+    padding-left: 10mm;
+    top: 0mm;
+    word-spacing: 3mm;
+}
+.id-title {
+    font-size: 0.4em;
     margin-bottom: 18mm;
     position: absolute;
-    top: 60mm;
-    left: 16mm;
+    top: 45mm;
+    left: 0mm;
+    width: 50mm;
+    padding-left: 10mm;
+    color: #5e7679;
 }
 
 .id-card-wrapper-back {
@@ -226,7 +255,6 @@ body {
     position: absolute;
     top: 40.5pt;
     /* 54px */
-    display: none;
 }
 
 .id-card-wrapper-back .id-card-content {
