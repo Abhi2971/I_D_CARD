@@ -71,7 +71,178 @@ body {
     left: 30mm;
     border-radius: 50%;
     border: 1mm solid #fca24d;
+    overflow: hidden;
+    transform: rotate(-30deg);
 }
+.id-card-wrapper-front .id-card-background .box4 .line1 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 0mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line2 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 0.75mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line3 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 1.5mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line4 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 2.25mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line5 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 3mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line6 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 3.75mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line7 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 4.5mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line8 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 5.25mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line9 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 6mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line10 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 6.75mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line11 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 7.5mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line12 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 8.25mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line13 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 9mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line14 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 9.75mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line15 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 10.5mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line16 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 11.25mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line17 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 12mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line18 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 12.75mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line19 {
+    position: absolute;
+    width: 20mm;
+      border-bottom: 0.2mm solid black;
+    top: 13.5mm;
+    left: -1mm;
+}
+
+.id-card-wrapper-front .id-card-background .box4 .line20 {
+    position: absolute;
+    width: 20mm;
+    border-bottom: 0.2mm solid black;
+    top: 14.25mm;
+    left: -1mm;
+}
+.id-card-wrapper-front .id-card-background .box5 {
+    position: absolute;
+    height: 13mm;
+    width: 13mm;
+    top: 13.8mm;
+    left: 30.8mm;
+    border-radius: 50%;
+    border: 1.2mm solid aliceblue;
+}
+
 .org-logo {
     text-align: center;
     margin-bottom: 14.25pt;
@@ -201,53 +372,15 @@ body {
 }
 
 .id-card-wrapper-back .id-card-background {
-    background-color: #fbeaea;
+    background-color: aliceblue;
     height: 100%;
 }
-
-.id-card-wrapper-back .id-dark-pink-bottom {
-    left: 0pt;
-    /* 0px */
-    margin-top: 216pt;
-    /* 288px */
-    width: 53.775pt;
-    /* 71.7px */
-    height: 22.5pt;
-    /* 30px */
-    background-color: rgb(248, 11, 165);
+.id-card-wrapper-back .id-card-background .box7{
     position: absolute;
-    top: 0pt;
-    /* 0px */
-}
-
-.id-card-wrapper-back .id-pink-bottom {
-    left: 90.75pt;
-    /* 121px */
-    margin-top: 216pt;
-    /* 288px */
-    width: 82.2pt;
-    /* 109.6px */
-    height: 22.5pt;
-    /* 30px */
-    background-color: rgb(245, 117, 200);
-    position: absolute;
-    top: 0pt;
-    /* 0px */
-}
-
-.id-card-wrapper-back .id-light-pink-bottom {
-    left: 48pt;
-    /* 64px */
-    margin-top: 216pt;
-    /* 288px */
-    width: 53.775pt;
-    /* 71.7px */
-    height: 22.5pt;
-    /* 30px */
-    background-color: rgb(250, 97, 197);
-    position: absolute;
-    top: 0pt;
-    /* 0px */
+    height: 10mm;
+    width: 100%;
+    background-color: #164d52;
+    bottom: 0mm;
 }
 
 /* Content Styles */
