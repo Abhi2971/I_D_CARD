@@ -24,15 +24,15 @@ body {
     /* 317px */
     margin: 17.25pt;
     /* 23px */
-    background-color: #ffffff;
     border: 0.75pt solid #ffffff;
     /* 1px */
     overflow: hidden;
 }
 
 .id-card-wrapper-front .id-card-background {
-    background-color: aliceblue;
+    background-color: #d8eef3;
     height: 100%;
+    background-image: url("/img/uuunion.svg");
 }
 
 .id-card-wrapper-front .id-card-background .box1 {
@@ -73,6 +73,7 @@ body {
     border: 1mm solid #fca24d;
     overflow: hidden;
     transform: rotate(-30deg);
+    background-color: white;
 }
 .id-card-wrapper-front .id-card-background .box4 .line1 {
     position: absolute;
@@ -237,12 +238,36 @@ body {
     position: absolute;
     height: 13mm;
     width: 13mm;
-    top: 13.8mm;
+    top: 13.6mm;
     left: 30.8mm;
     border-radius: 50%;
     border: 1.2mm solid aliceblue;
 }
-
+.id-card-wrapper-front .id-card-background .box6 {
+    position: absolute;
+    height: 10mm;
+    width: 50mm;
+    bottom: 26mm;
+    left: 10mm;
+}
+.id-card-wrapper-front .id-card-background .box6 .img1{
+    position: absolute;
+    background-image: url(/img/wave.svg);
+    background-repeat: no-repeat;
+    top: -2mm;
+    left: 12mm;
+    height: 10mm;
+    width: 14%;
+} 
+.id-card-wrapper-front .id-card-background .box6 .img2{
+    position: absolute;
+    background-image: url(/img/wave.svg);
+    background-repeat: no-repeat;
+    top: 0mm;
+    left: 12mm;
+    height: 10mm;
+    width: 14%;
+} 
 .org-logo {
     text-align: center;
     margin-bottom: 14.25pt;

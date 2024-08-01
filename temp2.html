@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract Background</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+
+        canvas {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <script>
+        const canvas = document.getElementById('backgroundCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        resizeCanvas(); // Set canvas size initially
+        window.addEventListener('resize', resizeCanvas); // Adjust on resize
+
+        const particles = [];
+        const numParticles = 100;
+
+        class Particle {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.size = Math.random() * 5 + 1;
+                this.speedX = Math.random() * 3 - 1.5;
+                this.speedY = Math.random() * 3 - 1.5;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.size > 0.2) this.size -= 0.1;
+            }
+
+            draw() {
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.8)';
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.stroke();
+            }
+        }
+
+        function createParticles(e) {
+            const xPos = e.clientX;
+            const yPos = e.clientY;
+
+            for (let i = 0; i < numParticles; i++) {
+                particles.push(new Particle(xPos, yPos));
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            particles.forEach((particle, index) => {
+                particle.update();
+                particle.draw();
+                if (particle.size <= 0.2) {
+                    particles.splice(index, 1);
+                }
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        canvas.addEventListener('mousemove', createParticles);
+        animate();
+    </script>
+</body>
+</html>
