@@ -46,21 +46,21 @@ body {
 .id-card-wrapper-front .id-card-background .box2 {
     position: absolute;
     height: 1.5mm;
-    width: 20mm;
+    width: 22mm;
     border-radius: 2.5mm 2.5mm 2.5mm 2.5mm;
     background-color: #164d52;
-    top: 13mm;
-    left: 4mm;
+    top: 9mm;
+    left: 2mm;
     transform: rotate(-37deg);
 }
 .id-card-wrapper-front .id-card-background .box3 {
     position: absolute;
-    height: 1.5mm;
-    width: 10mm;
+    height: 1.2mm;
+    width: 12mm;
     border-radius: 2.5mm 2.5mm 2.5mm 2.5mm;
     background-color: #fca24d;
-    top: 15mm;
-    left: 12mm;
+    top: 11mm;
+    left: 9mm;
     transform: rotate(-37deg);
 }
 .id-card-wrapper-front .id-card-background .box4 {
@@ -68,9 +68,9 @@ body {
     height: 15mm;
     width: 15mm;
     top: 13mm;
-    left: 30mm;
+    left: 35mm;
     border-radius: 50%;
-    border: 1mm solid #fca24d;
+    border: 2.5mm solid #ffffff;
     overflow: hidden;
     transform: rotate(-30deg);
     background-color: white;
@@ -236,12 +236,19 @@ body {
 }
 .id-card-wrapper-front .id-card-background .box5 {
     position: absolute;
+<<<<<<< HEAD
     height: 13mm;
     width: 13mm;
     top: 13.6mm;
     left: 30.8mm;
+=======
+    height: 18mm;
+    width: 18mm;
+    top: 13mm;
+    left: 35mm;
+>>>>>>> e63b17c8a630bd018696b30abd0ef1c89c72670a
     border-radius: 50%;
-    border: 1.2mm solid aliceblue;
+    border: 1mm solid #fca24d;
 }
 .id-card-wrapper-front .id-card-background .box6 {
     position: absolute;
@@ -271,14 +278,15 @@ body {
 .org-logo {
     text-align: center;
     margin-bottom: 14.25pt;
-    display: none;
     /* 19px */
 }
 
 .org-logo img {
-    max-width: 20.25%;
-    /* 27% */
-    height: auto;
+    position: absolute;
+    width: 67pt;
+    height: 16pt;
+    top: -14mm;
+    left: 36mm;
 }
 
 .user-photo {
@@ -294,21 +302,20 @@ body {
 }
 
 .user-photo img {
-    width: 20mm;
-    height: 20mm;
+    width: 25mm;
+    height: 25mm;
     position: absolute;
-    top: 2.25mm;
-    left: 42pt;
+    top: -0.75mm;
+    left: 37pt;
     border-radius: 50%;
     object-fit: cover;
-    border: 0.5mm solid black;
 }
 
 .user-name {
     font-size: 1em;
     font-weight: bold;
     position: absolute;
-    top: 34mm;
+    top: 30mm;
     left: 0mm;
     margin-left: 10mm;
     width: 20mm;
@@ -319,7 +326,7 @@ body {
     font-size: 0.5em;
     position: absolute;
     font-weight: bold;
-    top: 50mm;
+    top: 47mm;
     left: 0mm;
     width: 62mm;
     word-spacing: 7mm;
@@ -336,7 +343,7 @@ body {
     font-size: 0.5em;
     position: absolute;
     font-weight: bold;
-    top: 53mm;
+    top: 49.5mm;
     left: 0mm;
     width: 100mm;
     word-spacing: 7mm;
@@ -354,7 +361,7 @@ body {
     font-size: 0.5em;
     position: absolute;
     font-weight: bold;
-    top: 56mm;
+    top: 52mm;
     left: 0mm;
     width: 62mm;
     word-spacing: 7mm;
@@ -368,10 +375,10 @@ body {
     word-spacing: 3mm;
 }
 .id-title {
-    font-size: 0.4em;
+    font-size: 0.49em;
     margin-bottom: 18mm;
     position: absolute;
-    top: 45mm;
+    top: 40mm;
     left: 0mm;
     width: 50mm;
     padding-left: 10mm;
@@ -386,7 +393,6 @@ body {
     /* 317px */
     margin: 17.25pt;
     /* 23px */
-    background-color: #ffffff;
     border: 0.75pt solid #ffffff;
     /* 1px */
     overflow: hidden;
@@ -394,6 +400,7 @@ body {
     /* 254px */
     top: -255.75pt;
     /* -341px */
+
 }
 
 .id-card-wrapper-back .id-card-background {
@@ -407,6 +414,9 @@ body {
     background-color: #164d52;
     bottom: 0mm;
 }
+.id-card-wrapper-back .id-card-background .box8{
+    position: absolute;
+}
 
 /* Content Styles */
 .id-card-content {
@@ -418,9 +428,7 @@ body {
 .id-card-wrapper-back .id-card-content {
     position: absolute;
     top: 54pt;
-    /* 72px */
-    padding: 6pt;
-    /* 8px */
+    padding: 20pt;
 }
 
 .id-contact-info {
@@ -456,8 +464,12 @@ body {
     position: absolute;
     top: -14.25mm;
     /* -19mm */
-    left: 42pt;
+    left: 56pt;
     /* 56px */
+}
+
+.id-issue-date,.id-expiry-date{
+    font-size: 0.8em;
 }
 
 .id-emergency-contact,
@@ -466,6 +478,11 @@ body {
 .id-dates,
 .id-barcode,
 .id-policy {
-    font-size: 0.8333em;
-    margin-bottom: 5mm;
+    font-size: 0.6em;
+    margin-bottom: 3mm;
+}
+.id-policy {
+    position: absolute;
+    bottom: -12mm;
+    padding: 0pt;
 }
