@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abstract Geometric Design</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+  }
+
+  .design-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+
+  .shape {
+    position: absolute;
+    background: #FF8C00;
+  }
+
+  .shape.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 20px;
+    left: 50px;
+  }
+
+  .shape.triangle {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 130px solid #4CAF50;
+    bottom: 20px;
+    right: 30px;
+    transform: rotate(30deg);
+  }
+
+  .shape.square {
+    width: 100px;
+    height: 100px;
+    background: #1E90FF;
+    top: 200px;
+    left: 200px;
+    transform: rotate(45deg);
+  }
+
+  .shape.rectangle {
+    width: 200px;
+    height: 50px;
+    background: #FF6347;
+    bottom: 150px;
+    left: 100px;
+    transform: rotate(-20deg);
+  }
+
+  .text {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .text h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .text p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+<div class="design-container">
+  <div class="shape circle"></div>
+  <div class="shape triangle"></div>
+  <div class="shape square"></div>
+  <div class="shape rectangle"></div>
+  <div class="text">
+    <h1>Jane Amanda</h1>
+    <p>Business Development</p>
+  </div>
+</div>
+</body>
+</html>

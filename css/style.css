@@ -70,7 +70,7 @@ body {
     top: 13mm;
     left: 35mm;
     border-radius: 50%;
-    border: 1.5mm solid #ffffff;
+    border: 2.5mm solid #ffffff;
     overflow: hidden;
     transform: rotate(-30deg);
 }
@@ -235,8 +235,8 @@ body {
 }
 .id-card-wrapper-front .id-card-background .box5 {
     position: absolute;
-    height: 16mm;
-    width: 16mm;
+    height: 18mm;
+    width: 18mm;
     top: 13mm;
     left: 35mm;
     border-radius: 50%;
@@ -361,7 +361,6 @@ body {
     /* 317px */
     margin: 17.25pt;
     /* 23px */
-    background-color: #ffffff;
     border: 0.75pt solid #ffffff;
     /* 1px */
     overflow: hidden;
@@ -369,6 +368,7 @@ body {
     /* 254px */
     top: -255.75pt;
     /* -341px */
+
 }
 
 .id-card-wrapper-back .id-card-background {
@@ -381,6 +381,9 @@ body {
     width: 100%;
     background-color: #164d52;
     bottom: 0mm;
+}
+.id-card-wrapper-back .id-card-background .box8{
+    position: absolute;
 }
 
 /* Content Styles */
